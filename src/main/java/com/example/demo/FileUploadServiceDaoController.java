@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FileUploadServiceDaoController {
 	
-	private static final String PATH="/users/victorvenegas/desktop/testupload/";
+	private static final String PATH=TypeConstants.PATH_DIRECTORY;
 	
 	@GetMapping("/FileLoadSetFileRecord/{username}/{namefile}/{outputfile}/{status}")
 	public boolean setFileLoadRecord(@PathVariable String username,@PathVariable String namefile,@PathVariable String outputfile,@PathVariable String status) {
